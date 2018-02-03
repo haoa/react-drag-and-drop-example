@@ -1,4 +1,12 @@
+# React Drag and Drop Example
+
+Created to explore how to use react-dnd to allow for a wysiwyg editor for gui components. 
+Lefthand there is a sidebar as source for components, righthand there is a viewer with areas that accept certain components.
+
+----
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+
 
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
