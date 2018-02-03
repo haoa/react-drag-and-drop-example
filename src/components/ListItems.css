@@ -1,0 +1,41 @@
+.ListItem {
+    height: 40px;
+    width: 100%;
+    background-color: rgb(29, 127, 179);
+    border: 1px solid rgb(19, 104, 150);
+    text-align: center;
+    line-height: 40px;
+}
+
+@keyframes listitem {
+    from {
+        transform: rotate(0deg);
+        box-shadow: 0 0 0 #1c1c1ccf;
+    }
+    to {
+        transform: rotate(-5deg);
+        box-shadow: 12px 16px 7px #292929aa;
+    }
+}
+
+.ListItemDragging {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: flex-start;
+
+    min-height: 60px;
+    width: 450px;
+    background-color: rgb(29, 127, 179);
+    border: 2px solid rgb(13, 90, 131);
+    color: white;
+    line-height: 60px;
+    
+    font-size: 18pt;
+    
+    box-shadow: 12px 16px 7px #292929aa !important;
+    transition: all .5s ease ;
+    animation-name: listitem;
+    animation-duration: .3s;
+    transform: rotate(-5deg) !important;
+}

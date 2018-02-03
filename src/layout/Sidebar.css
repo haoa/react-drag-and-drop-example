@@ -1,0 +1,12 @@
+.Sidebar {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    order: 1;
+    flex-grow: .5;
+
+    background-color: #333355;
+    color: white;
+
+    height: 100%;
+}

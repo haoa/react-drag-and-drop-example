@@ -1,0 +1,16 @@
+.Viewer {
+    display: flex;
+    order: 2;
+    flex-grow: 2;
+
+    background-color: #553333;
+    color: white;
+
+    height: 100%;
+}
+
+.ListView {
+    width: 800px;
+    height: 600px;
+    background-color: #2f5e4e;
+}
