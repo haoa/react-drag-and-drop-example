@@ -48,3 +48,20 @@
     animation-duration: .3s;
     transform: rotate(-5deg) !important;
 }
+
+.list-item-text {
+    flex-grow: 1;
+
+}
+
+.list-item-text-edit {
+    width: 90%;
+
+    padding: 10px 0 10px 10px;
+    background-color: #97d2eb;
+    color: #29333e;
+
+    border: 1px solid #40a9ca;
+    box-shadow: inset 1px 1px 2px #0000005e;
+    font-size: 14pt;
+}
