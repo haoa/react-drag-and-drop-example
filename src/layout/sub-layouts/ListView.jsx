@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { DropTarget } from 'react-dnd'
 import DragDropTypes from '../../DragDropTypes'
-import ListItemSingleLine from '../../components/ListItemSingleLine'
+import ListItemSingleLine from '../../components/ui-components/ListItemSingleLine'
 import './Listview.css'
 
 const listItems = []

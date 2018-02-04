@@ -1,5 +1,7 @@
 export default {
     GeneralUIElement: 'GeneralUIElement',
+    
     ListItemSingleLine: 'ListItemSingleLine',
-    ListItemTwoLines: 'ListItemTwoLines'
+    ListItemTwoLines: 'ListItemTwoLines',
+    SimpleButton: 'SimpleButton',
 }

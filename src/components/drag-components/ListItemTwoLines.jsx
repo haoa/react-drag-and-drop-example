@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { DragSource } from 'react-dnd'
 import { getEmptyImage } from 'react-dnd-html5-backend'
 import DragDropTypes from '../../DragDropTypes';
-import '../ListItems.css'
+import './DragComponents.css'
 
 const listItemSource = {
     beginDrag(props, monitor, component) {
@@ -26,7 +26,6 @@ const collect = (connect, monitor) => {
 class ListItemTwoLines extends Component {
     componentDidMount() {
         //this.props.connectDragPreview(getEmptyImage(), {captureDraggingState: true,})
-        //<div className='ListItemDragging'>lalala</div>
     }
 
     render() {

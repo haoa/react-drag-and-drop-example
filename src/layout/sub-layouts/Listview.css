@@ -1,12 +1,16 @@
 .ListView {
-  width: 800px;
-  height: 600px;
-  background-color: #2f5e4e;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   align-content: flex-start;
+
+  width: 960px;
+  height: 500px;
   
+  background-color: #2f5e4e;
+
+  margin-left: 50px;
+
   overflow: auto;
 }
 
