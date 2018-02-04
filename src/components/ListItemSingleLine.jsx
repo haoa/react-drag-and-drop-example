@@ -1,42 +1,18 @@
-import React, { Component } from 'react'
-import { DragSource } from 'react-dnd'
-import { getEmptyImage } from 'react-dnd-html5-backend'
-import DragDropTypes from '../DragDropTypes';
+import React from 'react'
 import './ListItems.css'
 
-const listItemSource = {
-    beginDrag(props, monitor, component) {
-        // Return the data describing the dragged item
-        const item = { id: DragDropTypes.ListItemSingleLine, type: DragDropTypes.ListItemSingleLine }
-        return item;
-    },
-}
+const ListItem = ({text}) => (
+    <div className='ListItem'>
+        <div style={{
+            width: 40, 
+            height: 40, 
+            backgroundColor: '#eeeeee66', 
+            borderRadius:30,
+            marginLeft: 10,
+            marginRight: 20,
+    }}></div>
+        {text ? text : 'Dummy content'}
+    </div>
+)
 
-const collect = (connect, monitor) => {
-    return {
-        // Call this function inside render()
-        // to let React DnD handle the drag events:
-        connectDragSource: connect.dragSource(),
-        // You can ask the monitor about the current drag state:
-        isDragging: monitor.isDragging(),
-        connectDragPreview: connect.dragPreview()
-    }
-}
-
-class ListItemSingleLine extends Component {
-    componentDidMount() {
-        this.props.connectDragPreview(getEmptyImage(), {captureDraggingState: true,})
-        //<div className='ListItemDragging'>lalala</div>
-    }
-
-    render() {
-        let { isDragging, connectDragSource } = this.props
-        return connectDragSource(
-            <div className='ListItem'>
-                List Item 1
-            </div>
-        )
-    }
-}
-
-export default DragSource(DragDropTypes.GeneralUIElement, listItemSource, collect)(ListItemSingleLine)
+export default ListItem

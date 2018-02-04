@@ -1,12 +1,23 @@
 .Sidebar {
     display: flex;
     flex-flow: column;
-    align-items: flex-start;
+    align-items: center;
+    align-content: flex-start;
     order: 1;
     flex-grow: .5;
 
+    text-align: center;
+
     background-color: #333355;
-    color: white;
+    color: rgb(238, 238, 238);
 
     height: 100%;
+    width: 120px;
+
+    padding-top: 5px;
+}
+
+.sidebar-description {
+    color:  #94bcce;
+    margin: 10px 0;
 }

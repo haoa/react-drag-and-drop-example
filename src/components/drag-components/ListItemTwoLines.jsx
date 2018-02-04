@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { DragSource } from 'react-dnd'
 import { getEmptyImage } from 'react-dnd-html5-backend'
-import DragDropTypes from '../DragDropTypes';
-import './ListItems.css'
+import DragDropTypes from '../../DragDropTypes';
+import '../ListItems.css'
 
 const listItemSource = {
     beginDrag(props, monitor, component) {
@@ -32,7 +32,7 @@ class ListItemTwoLines extends Component {
     render() {
         let { isDragging, connectDragSource } = this.props
         return connectDragSource(
-            <div className='ListItem'>
+            <div className='list-item-drag-component'>
                 List Item 2
             </div>
         )
