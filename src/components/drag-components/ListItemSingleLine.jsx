@@ -33,7 +33,7 @@ class ListItemSingleLine extends Component {
         let { isDragging, connectDragSource } = this.props
         return connectDragSource(
             <div className='list-item-drag-component'>
-                List Item 1
+                Single Line
             </div>
         )
     }

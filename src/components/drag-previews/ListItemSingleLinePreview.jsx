@@ -1,7 +1,7 @@
 import React from 'react';
 import '../ListItems.css'
 
-const ListItemSingleLinePreview = () => (
+const ListItemSingleLinePreview = ({isDragging}) => (
     <div className='ListItem dragging'>
         <div style={{
             width: 40, 

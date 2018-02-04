@@ -5,7 +5,7 @@ import './Sidebar.css'
 
  const Sidebar = () => (
     <div className='Sidebar'>
-        <div className='sidebar-description'>Drop me into the Viewer</div>
+        <div className='sidebar-description'>List Items</div>
         <ListItemSingleLine />
         <ListItemTwoLines />
     </div>

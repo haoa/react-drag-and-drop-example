@@ -57,6 +57,7 @@ class ListView extends Component {
                 {listItems.map((item, index) => (
                     getComponentForItem(item, index)
                 ))}
+                {isOver && canDrop && (<div className='list-drop-placeholder'>+</div>)}
             </div>)
     }
 }
